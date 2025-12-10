@@ -5,7 +5,10 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int num, originalNum, remainder, result = 0;
+    int num;
+    int originalNum;
+    int remainder; 
+    int result = 0;
     cout << "Enter a 3-digit number: ";
     cin >> num;
     originalNum = num;
