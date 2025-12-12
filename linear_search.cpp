@@ -1,4 +1,4 @@
-//time complexity: O(n)
+//time complexity: O(n)=linear time complexity
 
 #include<iostream>
 using namespace std;
