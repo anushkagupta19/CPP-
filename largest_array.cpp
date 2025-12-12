@@ -6,7 +6,7 @@ int main(){
 
     int max=arr[0];
     int min=arr[0];
-
+//travese the array
     for(int i=0;i<n;i++){
         if(arr[i]>max){
             max=arr[i];
