@@ -1,33 +1,31 @@
-// Reverse an array
-// with O(1) extra space and O(n) time complexity
-// space complexity=O(1)
+//with out any extra spaces
+//space complexity=O(1)
 // time complexity=O(n)
+// two pointer approach
 
 #include<iostream>
 using namespace std;
-
 void printArray(int *arr,int n){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<",";
     }
     cout<<endl;
 }
-
 int main(){
     int arr[]={2,4,0,1,9,6};
     int n=sizeof(arr)/sizeof(int);
 
-    int copyarray[n];
+    int start=0,end=n-1;
 
-    for(int i=0;i<n;i++){
-         int j=n-i-1;
-         copyarray[j]=arr[i];
-        }
-        
-    for(int i=0;i<n;i++){
-    arr[i]=copyarray[i];
-        }
+    while(start<end){
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
 
+        start++;
+        end--;
+
+    }
     printArray(arr,n);
     return 0;
 }
