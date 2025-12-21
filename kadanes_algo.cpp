@@ -1,4 +1,3 @@
-
 // time complexity=O(n)
 
 #include<iostream>
@@ -12,9 +11,6 @@ void kadanesAlgorithm(int *arr, int n) {
 
     for (int i = 0; i < n; i++) {
         currentsum += arr[i];
-        // if (currentsum > maxsum) {
-        //     maxsum = currentsum; // update maximum sum
-        // }
         maxsum = max(maxsum, currentsum); // update maximum sum
         if (currentsum < 0) {
             currentsum = 0; // reset current sum if it becomes negative
