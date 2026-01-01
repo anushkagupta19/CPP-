@@ -1,4 +1,4 @@
-// time 
+// time complexity: O(n)
 
 #include <iostream>
 #include <climits>
@@ -16,9 +16,7 @@ void maxprofit( int *prices,int n){
         int curr_profit=prices[i]-bestbuy[i];
         maxprofit=max(maxprofit,curr_profit);
     }
-
     cout<<"max profit is: "<<maxprofit<<endl;
-
 }
 
 int main() {
@@ -26,6 +24,5 @@ int main() {
     int n = sizeof(prices) / sizeof(prices[0]);
 
     maxprofit(prices, n);
-
     return 0;
 }
