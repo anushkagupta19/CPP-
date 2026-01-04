@@ -9,10 +9,10 @@ void maxprofit( int *prices, int n){
     bestbuy[0]=INT_MAX; // initialize first day's best buy price to a very high value
 
     for(int i=1;i<n;i++){
-        bestbuy[i]=min(bestbuy[i-1],prices[i]);
+        bestbuy[i]=min(bestbuy[i-1],prices[i]);// update best buy price up to day i
     }
 
-    int maxprofit=0;
+    int maxprofit=0;// initialize maximum profit to 0
 
     for(int i=0;i<n;i++){
         int curr_profit=prices[i]-bestbuy[i]; // calculate current profit if sold on day i
