@@ -6,11 +6,12 @@
 using namespace std;
 
 void kadanesAlgorithm(int *arr, int n) {
-    int maxsum = INT_MIN;
-    int currentsum = 0;
+    int maxsum = INT_MIN; // initialize maximum sum to the smallest integer
+    int currentsum = 0; // initialize current sum to 0
 
-    for (int i = 0; i < n; i++) {
-        currentsum += arr[i];
+    for(int i = 0; i < n; i++) {
+        currentsum += arr[i]; // add current element to current sum
+
         maxsum = max(maxsum, currentsum); // update maximum sum
         if (currentsum < 0) {
             currentsum = 0; // reset current sum if it becomes negative
