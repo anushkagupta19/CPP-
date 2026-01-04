@@ -17,7 +17,6 @@ public:
             // Otherwise, add the element to the set
             seen.insert(x);
         }
-        
         // If we finish the loop, all elements are distinct
         return false;
     }

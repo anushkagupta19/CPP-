@@ -14,11 +14,12 @@ void maxSubarraySum1(int *arr, int n) {
             for(int i = start; i <= end; i++){// to calculate sum of subarray
                 currentSum += arr[i];
             }
+            
             cout << currentSum << ",";
             maxsum = max(maxsum, currentSum);// updating maximum sum
         }
     cout << endl;
-    }
+     }
     cout << "The maximum subarray sum is: " << maxsum << endl;
 }
 
