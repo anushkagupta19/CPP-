@@ -1,4 +1,4 @@
-//time complexity:
+//time complexity:o(n^2)
 
 #include<iostream>
 #include<bits/stdc++.h>
