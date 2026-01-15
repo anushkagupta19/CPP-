@@ -11,10 +11,8 @@ void binTodec(int binNum){
         decNum+=lastdigit*pow;
         pow=pow*2;
         n=n/10;
-
     }
 cout<<decNum<<endl;
-
 }
 
 int main(){
