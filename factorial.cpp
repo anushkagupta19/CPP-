@@ -1,4 +1,6 @@
 // write a program to find factorial of a number
+// time complexity: O(n)
+
 
 #include <iostream>
 using namespace std;
