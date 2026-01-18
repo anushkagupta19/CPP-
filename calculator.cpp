@@ -18,12 +18,15 @@ switch(op){
     case '+':
         cout<<"addition is: "<<a+b<<endl;
         break;
+
     case '-':
         cout<<"subtraction is: "<<a-b<<endl;
         break;
+
     case '*':
         cout<<"multiplication is: "<<a*b<<endl;
         break;
+
     case '/':
         if(b!=0){
             cout<<"division is: "<<a/b<<endl;
@@ -31,6 +34,7 @@ switch(op){
             cout<<"Error: Division by zero!"<<endl;
         }
         break;
+        
     default:
         cout<<"Invalid operator!"<<endl;
   }
