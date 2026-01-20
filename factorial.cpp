@@ -11,9 +11,9 @@ int main(){
     cin>>n;
 
     int factorial=1;
+
     for(int i=1;i<=n;i++){
-        factorial=factorial*i;
-        
+        factorial=factorial*i; 
     }
     cout<<"factorial is :"<<factorial<<endl;
 }
