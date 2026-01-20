@@ -1,10 +1,13 @@
 #include<iostream>
 using namespace std;
+
 int findMissingElement(int a[],int n){
+
     int N =n+1;
     int totalSum = (N*(N+1))/2;
 
     int arrSum =0;
+    
     for(int i=0;i<n;i++){
         arrSum += a[i];
     }
