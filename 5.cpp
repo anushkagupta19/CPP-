@@ -3,7 +3,9 @@
 
 #include <iostream>
 using namespace std;
+
 int main() {
+    
     int arr[] = {2, 96, 69, 77, 145, 20};
     int n = sizeof(arr) / sizeof(arr[0]);
 
