@@ -11,6 +11,7 @@ int findMissingElement(int a[],int n){
     for(int i=0;i<n;i++){
         arrSum += a[i];
     }
+    
     return totalSum - arrSum;
 }
 int main(){
