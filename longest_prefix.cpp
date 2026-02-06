@@ -1,31 +1,19 @@
-#include <vector>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Solution {
 public:
-    string longestCommonPrefix(vector<string>& strs) {
-        if (strs.empty()) return "";
+    string longestCommonPrefix(vector<string>& s) {
         
-        string prefix = "";
+        string ans = "";
         
-        for (int i = 0; i < strs[0].size(); i++) {
-            char c = strs[0][i];
-            for (int j = 1; j < strs.size(); j++) {
-                if (i >= strs[j].size() || strs[j][i] != c) {
-                    return prefix;
-                }
-            }
-            prefix += c;
-        }
-        return prefix;
+       sort(s.begin(),s.end());
+
+       int i=0;
+       while(i<s[0].length() and s[0][i] == s[s.size()-1][i]){
+        ans+=s[0][i];
+        i++;
+       } 
+       return ans;
     }
 };
-
-int main() {
-    Solution solution;
-    vector<string> strs = {"flower", "flow", "flight"};
-    string result = solution.longestCommonPrefix(strs);
-    // Expected output: "fl"
-    return 0;
-}
