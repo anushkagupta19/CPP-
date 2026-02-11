@@ -59,7 +59,7 @@ public:
 // Approach 3: Using two pointers to traverse the ratings array and calculate the candies on the fly, without using extra space for arrays.
 class Solution {
 public:
-    int candy(vector<int>& ratings) {
+    int candy(vector<int>& ratings)  {
         int n = ratings.size();
         int candy = n; //Each person given one candy
         
@@ -87,13 +87,11 @@ public:
                 candy += valley;
                 i++;
             }
-            
             //Note that we added candies coming from left to Peak and comgin from right to Peak
             //But, we need to consider only max from both of them for the Peak.
             //So, remove the min candy from Peak.
             candy -= min(peak, valley);
         }
-        
         return candy;
     }
 };
