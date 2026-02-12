@@ -1,6 +1,8 @@
 #include <vector>
 using namespace std;
 
+
+
 // approach 1: Using two arrays to store the count of candies for left to right and right to left passes, and then taking the maximum of both for each child.
 class Solution {
 public:
@@ -32,6 +34,8 @@ public:
     }
 };
 
+
+
 // Approach 2: Using only one array to store the count of candies, and updating it in both left to right and right to left passes.
 class Solution {
 public:
@@ -55,6 +59,9 @@ public:
         return accumulate(begin(count), end(count), 0);
     }
 };
+
+
+
 
 // Approach 3: Using two pointers to traverse the ratings array and calculate the candies on the fly, without using extra space for arrays.
 class Solution {
