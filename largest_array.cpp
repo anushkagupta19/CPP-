@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
+
 int main(){
+
     int arr[]={5,4,3,9,12};
     int n=sizeof(arr)/sizeof(int);
 
