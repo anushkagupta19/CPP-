@@ -5,6 +5,7 @@
 using namespace std;
 
 void maxprofit( int *prices, int n){
+
     int bestbuy[100000]; // assuming maximum size of prices array
     bestbuy[0]=INT_MAX; // initialize first day's best buy price to a very high value
 
@@ -23,6 +24,7 @@ void maxprofit( int *prices, int n){
 
 int main() {
     int prices[] = {7, 1, 5, 3, 6, 4};
+    
     int n = sizeof(prices) / sizeof(prices[0]);
 
     maxprofit(prices, n);
