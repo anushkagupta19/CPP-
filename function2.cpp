@@ -10,6 +10,7 @@ int sum(int a,int b=1){
 int main(){
 
     int s=sum(3);
+    
     cout<<"the sum is "<<s<<endl;
     return 0;
 
