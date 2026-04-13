@@ -1,1 +1,2 @@
-#include <iomanip> // Used for pretty spacing
+
+    int n=10;
