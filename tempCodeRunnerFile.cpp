@@ -1,2 +1,2 @@
-
-    int n=10;
+// self practice
+#include<iostream>
