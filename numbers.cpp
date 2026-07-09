@@ -1,4 +1,6 @@
-// armstrong number,  6=1+2+3
+// Armstrong / Narcissistic Number
+// What it is: A number that equals the sum of its own digits each 
+// raised to the power of the total number of digits.
 
 #include<iostream>
 using namespace std;
@@ -18,3 +20,5 @@ int main(){
         cout<<"no";
     }
 }
+
+// strong number - +

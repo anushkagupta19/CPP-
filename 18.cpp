@@ -40,23 +40,23 @@
 //     return 0;
 // }
 
-// #include <iostream>
-// using namespace std;
-// int main() {
-//     int n=5;
-//     for(int i=0;i<n;i++){
-//         for(int j=0;j<n-i;j++){
-//             cout<<" ";
-//         }
-//         for(int k=0;k<i;k++){
-//             cout<<"*";
-//         }
-//         for(int l=1;l<i;l++){
-//             cout<<"*";
-//         }
-//         cout<<endl;
-//     }
-// }
+#include <iostream>
+using namespace std;
+int main() {
+    int n=5;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i;j++){
+            cout<<" ";
+        }
+        for(int k=0;k<i;k++){
+            cout<<"*";
+        }
+        for(int l=1;l<i;l++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
 
 // #include <iostream>
 // using namespace std;
@@ -150,17 +150,17 @@
 // GHIJ
 // KLMNO
 
-#include<iostream>
-using namespace std;
-int main(){
-    int n=5;
-    char ch='A';
-    int num=0;
-    for(int i=0;i<=n;i++){
-        for(int j=0;j<=i;j++){
-            cout<<char(ch+num)<<" ";
-            num++;
-        }
-        cout<<endl;
-    }
-}
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n=5;
+//     char ch='A';
+//     int num=0;
+//     for(int i=0;i<=n;i++){
+//         for(int j=0;j<=i;j++){
+//             cout<<char(ch+num)<<" ";
+//             num++;
+//         }
+//         cout<<endl;
+//     }
+// }
