@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
+    
     char hex[17];
     long long decimal = 0;
     long long power = 1; 
